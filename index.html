@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Online Exam</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="first">
+    <div class="start-container" id="start">
+        <div class="choose-exam">
+            <div class="welcome">
+                <h1>Welcome To Online Test</h1>
+                <hr>
+            </div>
+            <select class="exam-select">
+                <option id="selectex" value="selectexam">Select Exam</option>
+                <option id="IQ_EX" value="iq">IQ Exam</option>
+                <option id="EN_EX" value="english">English Exam</option>
+            </select>
+            <div class="startexam_error"></div>
+            <button id="start-btn">Start Exam</button>
+        </div>
+    </div>
+</div>
+
+<div class="second">
+    <div class="container" id="exam">
+        <header class="exam-header">
+            <div class="title"></div>
+        </header>
+        <div class="side-bar">
+            <div class="sidebar-content">
+                <div class="exam-date">
+                    <fieldset>
+                        <legend>Exam Date</legend>
+                        <span id="examdate-value"></span>
+                    </fieldset>
+                </div>
+                <div class="exam-time">
+                    <fieldset>
+                        <legend>Exam Time</legend>
+                        <div class="Examtimer-value" data-timer="10" id="Examtimer-value"></div>
+                    </fieldset>
+                </div>
+                <div class="marked-Questions">
+                    <fieldset class="mark_Q">
+                        <legend>Marked Questions</legend>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="All-Question">
+            <div class="content">
+                <div class="Question-area">
+                    <div class="Question"></div>
+                    <div class="Question-Number"></div>
+                </div>
+                <div class="answers-box"></div>
+                <div class="nav-btns">
+                    <div class="Q_Navigation">
+                        <button class="btn" id="first-Q">First</button>
+                        <button class="btn" id="prev-Q">Prev</button>
+                        <button class="btn" id="next-Q">Next</button>
+                        <button class="btn" id="last-Q">Last</button>
+                        <button class="btn" id="mark-Q">Mark</button>
+                    </div>
+                    <div class="Q_Finish">
+                        <button class="btn btn_finish" id="finish-exam">Finish Exam</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="resultContainer">
+    <div class="Result">
+        <div class="examname"></div>
+        <div class="exam_result"></div>
+        <div id="TotalQuestion"></div>
+        <div id="Correct"></div>
+        <div id="wrong"></div>
+        <div id="exam_time"></div>
+        <button id="gotomain">Go To Next Exam</button>
+        <button id="restartexam">Restart Exam</button>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
